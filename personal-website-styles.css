@@ -1,0 +1,306 @@
+
+/* Fonts & Alignment */
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 300;
+    font-style: italic;
+  }  
+
+  /* Sections */
+h1{
+    font-family:'DM Serif Text', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: white
+}
+
+h2{
+    font-family:'DM Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: white
+}
+
+h3{
+    font-family:'DM Serif Text', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    color: white
+}
+
+h4{
+    font-family:'DM Serif Text', sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+p, header, footer{
+    font-family:'DM Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center; 
+    font-weight: normal;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+/* Background */ 
+
+body {
+  background-image: url("images/gradient-background.png");
+  /* background-size: cover;  */
+  background-size: 100% 100%;
+  background-repeat: no-repeat; /* prevent repeating */
+  background-position: center;
+  color: white
+}
+
+
+/* Nav Menu  */
+
+nav{
+  position:sticky;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  top: 50px;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button-like styling */
+.btn {
+  display: inline-block;
+  border: 2px solid #140A3F;
+  background-color: #140A3F;
+  border-radius: 50px;
+  color: white;
+  padding: 14px 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  cursor: none;
+  margin: 0 5px; /* spacing between buttons */
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Container styling */
+.btn-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* -------------- HOME PAGE ---------------- */ 
+
+/* Image and Text side-by-side AAAA STRUGGLING ;-; */
+
+.profile{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  padding: 200px;
+  margin-top: -100px;
+}
+
+.profile-img{
+  max-width: 80%;
+  height: 80%;
+}
+
+.profile-info{
+  position:right;
+  max-width:100%; 
+}
+
+/* --- Logos/Icons --- */
+
+
+/* -------------- ABOUT ME ---------------- */ 
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-top: 60px;
+  padding-left: 230px;
+  margin-right: -360px;
+}
+
+.column-text{
+  width: 100%;
+  padding:1px;
+  padding-top:40px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-top: 60px;
+  padding-left: 10px;
+  margin-left: -490px;
+  margin-top: 120px;
+  margin-right: -360px;
+}
+
+.column-text2{
+  width: 100%;
+  padding:1px;
+  padding-top:160px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Animation from W3 Schools (atp im just messing around) */
+
+img{
+  border-radius: 12.5%;
+  filter: drop-shadow(0 0 0.75rem #906A91);
+}
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake2 4s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+a:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 4s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+  
+}
+
+
+@keyframes shake {
+   from {
+    text-shadow: 0 0 10px #906A91, 0 0 20px #b87bba, 0 0 30px #333170, 0 0 40px #906A91, 0 0 50px #333170;
+  }
+  to {
+    text-shadow: 0 0 20px #212360, 0 0 30px #614cac, 0 0 40px #333170, 0 0 50px #906A91;
+  } 
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(1deg); }
+}
+
+
+@keyframes shake2 {
+   from {
+    box-shadow: 0 0 10px #9da0ed, 0 0 20px #b87bba, 0 0 30px #333170, 0 0 40px #906A91, 0 0 50px #333170;
+  }
+  to {
+    box-shadow: 0 0 20px #212360, 0 0 30px #614cac, 0 0 40px #333170, 0 0 50px #906A91;
+  } 
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(1deg); }
+}
+
+
+/* Glowing Text!!! */
+
+.glow {
+  font-size: 95px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #212360, 0 0 20px #b87bba, 0 0 30px #333170, 0 0 40px #906A91, 0 0 50px #333170;
+  }
+  to {
+    text-shadow: 0 0 20px #212360, 0 0 30px #3C3068, 0 0 40px #333170, 0 0 50px #906A91;
+  }
+}
+
+
+/* Typerwriter by Frank Eno! */
+
+/* Cursor */
+
+
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 35ch; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+/* ----- Scrolling and Fading?? add later --- */
+
