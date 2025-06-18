@@ -212,7 +212,7 @@ a {
 /* Animation from W3 Schools (atp im just messing around) */
 
 img:not(.no-style){
-  border-radius: 12.5%;
+  border-radius: 12.5 %;
   filter: drop-shadow(0 0 0.75rem #906A91);
 }
 
